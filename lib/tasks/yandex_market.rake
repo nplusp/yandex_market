@@ -6,7 +6,7 @@ namespace :yandex_market do
   
   # Yandex Market XML file generation task:
   task generate: :environment do
-    puts "Buildikng YMl file #{YandexMarket::configuration.file_name}..."
+    puts "Building YML file #{YandexMarket::configuration.file_name}..."
     YandexMarket::Xml::build
     puts "YML file was built successfully!"
   end
